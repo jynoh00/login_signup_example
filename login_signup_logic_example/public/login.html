@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <title>Log In</title>
+    </head>
+    <body>
+        <form method="POST" action="/login">
+            <label for="username">UserName: </label><input type="text" name="username"/>
+            <br>
+            <label for="password">Password: </label><input type="password" name="password"/>
+            <br>
+            <button>Log In</button> <!-- POST /login으로 username, password의 데이터를 body에 첨부하여 전송(요청)한다.
+                                            이후 해당 라우터에서 로그인 로직 작성 -->
+        </form>
+    </body>
+</html>
